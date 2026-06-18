@@ -1,0 +1,149 @@
+ResumeAI Pro — Configuration & Setup Instructions
+
+---
+
+1. Project Overview
+
+---
+
+ResumeAI Pro is an AI-powered ATS (Applicant Tracking System) analyser built using Machine Learning and Streamlit.
+
+It provides:
+
+* Student Mode → Resume analysis, ATS score, improvement tips
+* Recruiter Mode → Candidate ranking based on Job Description
+
+---
+
+2. Prerequisites
+
+---
+
+Make sure the following are installed:
+
+* Python (version 3.8 or above)
+* pip (Python package manager)
+
+---
+
+3. Install Required Libraries
+
+---
+
+Open terminal in the project folder and run:
+
+pip install -r requirements.txt
+
+---
+
+4. Dataset Setup
+
+---
+
+Ensure the dataset file is present:
+
+Dataset/
+└── Resume.csv
+
+This dataset is used for:
+
+* Model training
+* Skill extraction
+* Insights generation
+
+---
+
+5. Train the Machine Learning Model
+
+---
+
+Before running the application, train the model:
+
+python train_model.py
+
+This will generate:
+
+* resume_model.pkl (trained ML model)
+* category_distribution.png (dataset visualization)
+
+---
+
+6. Run the Application
+
+---
+
+After training is complete, start the app:
+
+streamlit run app.py
+
+Then open in browser:
+
+http://localhost:8501
+
+---
+
+7. How to Use the Application
+
+---
+
+Student Mode:
+
+1. Upload resume file
+2. Enter job description
+3. View:
+
+   * ATS score
+   * Skill match
+   * Recommendations
+
+Recruiter Mode:
+
+1. Enter job description
+2. Upload multiple resumes
+3. View ranked candidates
+
+---
+
+8. Folder Structure Requirement
+
+---
+
+Ensure the following structure:
+
+* Source_Code/
+* Model/
+* Dataset/
+* Config/
+
+---
+
+9. Notes
+
+---
+
+* Model must be trained before running the app
+* Internet is NOT required (fully offline ML system)
+* Large files may take more processing time
+
+---
+
+10. Troubleshooting
+
+---
+
+Issue: Module not found
+→ Run: pip install -r requirements.txt
+
+Issue: Model not found
+→ Run: python train_model.py
+
+Issue: App not opening
+→ Ensure Streamlit is installed:
+pip install streamlit
+
+Issue: Dataset error
+→ Check if Resume.csv exists in Dataset folder
+
+---
+
+## End of Instructions
