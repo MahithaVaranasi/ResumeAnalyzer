@@ -96,7 +96,6 @@ Resume_Analyzer/
 ├── Model/                      # Saved models
 ├── Source_Code/                # Application source code
 ├── Project_Demo.mp4            # Demonstration video
-├── Resume_Analyzer_Report.pdf  # Complete project documentation
 └── README.md
 ```
 
