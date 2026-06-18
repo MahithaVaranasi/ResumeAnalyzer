@@ -120,7 +120,7 @@ before running the application.
 
 git clone https://github.com/MahithaVaranasi/ResumeAnalyzer.git
 cd ResumeAnalyzer
-
+```
 ---
 
 ## 📊 System Workflow
